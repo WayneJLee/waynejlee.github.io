@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>wayneJLee</title>
-    <link>localhost/</link>
+    <link>waynejlee.github.io/</link>
     <description>Recent content on wayneJLee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     
-	<atom:link href="localhost/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="waynejlee.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>About</title>
-      <link>localhost/about/</link>
+      <link>waynejlee.github.io/about/</link>
       <pubDate>Mon, 15 Jun 2020 19:54:23 +0800</pubDate>
       
-      <guid>localhost/about/</guid>
+      <guid>waynejlee.github.io/about/</guid>
       <description>Wayne Lee Quick background:
  Dropped out of college to pursue professional gaming Started my infosec journey in BD/Sales Learned some Python around to automate work Decided to jump on HTB around July 2019 to learn how to hax stuff OSCP - Dec 2019 OSWE - May 2020  As a college dropout, I didn&amp;rsquo;t have a formal education in Computer Science but I did tinker a lot with the computer ever since I was a kid.</description>
     </item>
