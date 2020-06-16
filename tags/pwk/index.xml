@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PWK on wayneJLee</title>
-    <link>waynejlee.com/tags/pwk/</link>
+    <link>https://waynejlee.com/tags/pwk/</link>
     <description>Recent content in PWK on wayneJLee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Tue, 16 Jun 2020 02:43:16 +0800</lastBuildDate>
     
-	<atom:link href="waynejlee.com/tags/pwk/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://waynejlee.com/tags/pwk/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Zero to OSCP</title>
-      <link>waynejlee.com/posts/zero-to-oscp/</link>
+      <link>https://waynejlee.com/posts/zero-to-oscp/</link>
       <pubDate>Tue, 16 Jun 2020 02:43:16 +0800</pubDate>
       
-      <guid>waynejlee.com/posts/zero-to-oscp/</guid>
+      <guid>https://waynejlee.com/posts/zero-to-oscp/</guid>
       <description>Hello World! This post was written for those who are starting out and feeling overwhelmed by the breadth and depth of Infosec.
 To make it as relatable as possible, I decided to make this a series of posts in which I go through the phases &amp;amp; challenges I faced through:
  OSCP OSWE Red Team Ops by Zero-Point Security  It&amp;rsquo;s unlikely that a majority of you readers come from the same background as I have, therefore this post won&amp;rsquo;t be a preparation guide per se.</description>

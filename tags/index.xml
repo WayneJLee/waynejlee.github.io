@@ -2,67 +2,67 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on wayneJLee</title>
-    <link>waynejlee.com/tags/</link>
+    <link>https://waynejlee.com/tags/</link>
     <description>Recent content in Tags on wayneJLee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Tue, 16 Jun 2020 02:43:16 +0800</lastBuildDate>
     
-	<atom:link href="waynejlee.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://waynejlee.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>HackTheBox</title>
-      <link>waynejlee.com/tags/hackthebox/</link>
+      <link>https://waynejlee.com/tags/hackthebox/</link>
       <pubDate>Tue, 16 Jun 2020 02:43:16 +0800</pubDate>
       
-      <guid>waynejlee.com/tags/hackthebox/</guid>
+      <guid>https://waynejlee.com/tags/hackthebox/</guid>
       <description></description>
     </item>
     
     <item>
       <title>HTB</title>
-      <link>waynejlee.com/tags/htb/</link>
+      <link>https://waynejlee.com/tags/htb/</link>
       <pubDate>Tue, 16 Jun 2020 02:43:16 +0800</pubDate>
       
-      <guid>waynejlee.com/tags/htb/</guid>
+      <guid>https://waynejlee.com/tags/htb/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Offsec</title>
-      <link>waynejlee.com/tags/offsec/</link>
+      <link>https://waynejlee.com/tags/offsec/</link>
       <pubDate>Tue, 16 Jun 2020 02:43:16 +0800</pubDate>
       
-      <guid>waynejlee.com/tags/offsec/</guid>
+      <guid>https://waynejlee.com/tags/offsec/</guid>
       <description></description>
     </item>
     
     <item>
       <title>OSCP</title>
-      <link>waynejlee.com/tags/oscp/</link>
+      <link>https://waynejlee.com/tags/oscp/</link>
       <pubDate>Tue, 16 Jun 2020 02:43:16 +0800</pubDate>
       
-      <guid>waynejlee.com/tags/oscp/</guid>
+      <guid>https://waynejlee.com/tags/oscp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Penetration Test</title>
-      <link>waynejlee.com/tags/penetration-test/</link>
+      <link>https://waynejlee.com/tags/penetration-test/</link>
       <pubDate>Tue, 16 Jun 2020 02:43:16 +0800</pubDate>
       
-      <guid>waynejlee.com/tags/penetration-test/</guid>
+      <guid>https://waynejlee.com/tags/penetration-test/</guid>
       <description></description>
     </item>
     
     <item>
       <title>PWK</title>
-      <link>waynejlee.com/tags/pwk/</link>
+      <link>https://waynejlee.com/tags/pwk/</link>
       <pubDate>Tue, 16 Jun 2020 02:43:16 +0800</pubDate>
       
-      <guid>waynejlee.com/tags/pwk/</guid>
+      <guid>https://waynejlee.com/tags/pwk/</guid>
       <description></description>
     </item>
     
