@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>waynejlee.com/tags/hackthebox/</loc>
+    <lastmod>2020-06-16T02:43:16+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>waynejlee.com/tags/htb/</loc>
+    <lastmod>2020-06-16T02:43:16+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>waynejlee.com/tags/offsec/</loc>
     <lastmod>2020-06-16T02:43:16+08:00</lastmod>
   </url>
