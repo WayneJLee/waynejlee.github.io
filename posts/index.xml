@@ -1,0 +1,129 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Posts on wayneJLee</title>
+        <link>waynejlee.com/posts/</link>
+        <description>Recent content in Posts on wayneJLee</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+        <lastBuildDate>Tue, 16 Jun 2020 02:43:16 +0800</lastBuildDate>
+        <atom:link href="waynejlee.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Zero to OSCP</title>
+            <link>waynejlee.com/posts/zero-to-oscp/</link>
+            <pubDate>Tue, 16 Jun 2020 02:43:16 +0800</pubDate>
+            
+            <guid>waynejlee.com/posts/zero-to-oscp/</guid>
+            <description>Hello World! This post was written for those who are starting out and feeling overwhelmed by the breadth and depth of Infosec.
+To make it as relatable as possible, I decided to make this a series of posts in which I go through the phases &amp;amp; challenges I faced through:
+ OSCP OSWE Red Team Ops by Zero-Point Security  It&amp;rsquo;s unlikely that a majority of you readers come from the same background as I have, therefore this post won&amp;rsquo;t be a preparation guide per se.</description>
+            <content type="html"><![CDATA[<h2 id="hello-world">Hello World!</h2>
+<p>This post was written for those who are starting out and feeling overwhelmed by the breadth and depth of Infosec.</p>
+<p>To make it as relatable as possible, I decided to make this a series of posts in which I go through the phases &amp; challenges I faced through:</p>
+<ul>
+<li>OSCP</li>
+<li>OSWE</li>
+<li>Red Team Ops by Zero-Point Security</li>
+</ul>
+<p>It&rsquo;s unlikely that a majority of you readers come from the same background as I have, therefore this post won&rsquo;t be a preparation guide per se. However, I would like to share and document my experience. Hopefully, you&rsquo;ll be able to take away a thing or two.</p>
+<p>To keep this post concise, I won&rsquo;t be going into too much details on my background. You&rsquo;ll be able to find the <strong><a href="/about/">gist of it here</a></strong> but essentially, I dropped out of college to pursue professional Esports at 19 and never looked back.</p>
+<p><em>Note: There are a ton of great posts and reading material out there already on OSCP preparation so I won&rsquo;t be going in to much detail. I personally thought <strong><a href="https://forum.hackthebox.eu/discussion/1655/oscp-exam-review-2019-notes-gift-inside">21y4d&rsquo;s writeup on HackTheBox</a></strong> was amazing so check it out.</em></p>
+<h3 id="scrape-all-the-things">Scrape All The Things</h3>
+<p>It started a couple of months into my new sales role when I was asked to do some data entry work off a website. For those that don&rsquo;t know me, I hate menial tasks and figured I might as well learn something new while doing it.</p>
+<p>I started looking up on ways to automatically gather data off websites and soon came across two terms repeatedly, <strong>Python</strong> and <strong>Scraping</strong>. With nothing to lose, I decided to give it a shot.</p>
+<p>It took me about 2 weeks of learning and tinkering, during and after work, before I finally <em>scraped</em> together a really ugly script that did the job. In reality, doing the entire thing manually would&rsquo;ve probably taken me 3 days at most.</p>
+<p>However, the amount of hours I sunk into that project, laid the foundations to the craft which I&rsquo;m still building on today.</p>
+<p>Soon after, I made a few more scripts to automate more stuff at work. It was essentially more data processing and parsing but working on mini projects with a clear objective in mind is a great way to practice programming <em>(It also felt incredibly rewarding)</em>.</p>
+<p>As I gained confidence in my programming skills, I started to look at what else was available to me and also related to my industry.</p>
+<blockquote>
+<p>Reddit and it&rsquo;s subreddits are usually an amazing place to get some advice. Most of the time, the question you have has likely been asked before.</p>
+</blockquote>
+<p>When it came to career advice in infosec, almost everyone wanted to know how to get a job as a penetration tester. After going through a few posts and the OSCP being mentioned in all of them, I decided to look into it.</p>
+<p><strong>Oh boy.</strong></p>
+<p>A quick browse through <a href="https://reddit.com/r/OSCP">/r/OSCP</a> (Seriously, try it) and you&rsquo;ll typically see a number of posts from people who have failed their attempt.</p>
+<p>It really wasn&rsquo;t the most encouraging thing, but I always enjoyed a good challenge. <a href="https://www.reddit.com/r/oscp/comments/dfd884/i_passed_the_oscp_in_less_than_a_year_starting_as/">One post in particular</a> inspired me and it was at that point that I decided to give it a shot.</p>
+<h3 id="hack-the-what">Hack-the-What?!</h3>
+<p>I started watching ippsec&rsquo;s YouTube videos and could barely grasp what was going on. I had to continuously pause the video to Google the definitions of the jargons he was using.</p>
+<p>Most of ippsec&rsquo;s videos cover recently retired <strong>Hack The Box</strong> machines and he is the reason I was able to learn things as fast as I could, all for free.</p>
+<blockquote>
+<p><em>I <strong>highly recommend</strong> aspiring OSCP takers go through his videos and understand his methodology, so that you can fine tune your own. He might not explain everything to the core but he always references and shows said reading materials.</em></p>
+</blockquote>
+<p>After about a week (or two) of familiarizing myself with the jargons, I decided to give <strong>HTB</strong> a go.</p>
+<p>The common consensus was that HTB was a great platform for people to start on. You&rsquo;d subscribe to the VIP membership and attempt to do the retired boxes as they have walkthroughs if you happen to be stuck.</p>
+<p>For better or worse, my approach was slightly different. My competitive side kicked in as soon as I saw the leaderboards and I couldn&rsquo;t resist the temptation of earning points through pwning active boxes.</p>
+<p>I started off with the <strong>Easy</strong> boxes to get a better understanding of basic methodology. Easy boxes are, as you would expect, much more straight-forward <em>(some might even say, real world-like)</em> compared to the higher difficulty boxes.</p>
+<p><img src="/img/zero-to-oscp/swagshop.png" alt="SwagShop" title="SwagShop">
+<em>My first pwn on HTB</em></p>
+<p>It took me about 2 days to get root on SwagShop but boy was it worth it. Nothing beats the feeling of seeing a root shell after the amount of blood, sweat and tears shed.</p>
+<p>This might sound cliche but pwning SwagShop gave me a huge confidence boost and belief that I can pull it off.</p>
+<p>Over the next few months, I&rsquo;d work on a HTB box as soon as I got back from work. This definitely affected my lifestyle as I was sleeping very little, often sleeping around 3-4AM every night for a few hours before getting back up for work.</p>
+<p>The common issue you&rsquo;d probably face here <em>(and likely for the rest of your infosec career)</em>, is that it&rsquo;s incredibly hard to go to sleep when you have a nagging problem at the back of your head. The brain refuses to shut off and I&rsquo;ll usually only call it a night when I know I can&rsquo;t keep my eyes open any longer.</p>
+<p>I also made a bunch of connections on the <a href="https://discord.gg/zdnHSFe">HTB Discord</a> channel, some of which that I still keep in touch with today. It was important for me to have people I could discuss things with because I didn&rsquo;t know anyone in real life who I could talk to.</p>
+<p>In terms of buffer overflow preparation, I wasn&rsquo;t specifically preparing for it but my first ever BOF was a ROP-chain exploit from an Active HTB box at the time named <strong>Ellingson</strong>. It was a complete mind-bender <em>(read: overkill)</em> and I took about a week to root that box. I had to fully grasp the concepts of buffer overflows, and then ROP-chains, before finally putting everything together to gain privilege escalation.</p>
+<p>After pwning about 20 active boxes in 3 months or so, I decided it was time to enroll in the OSCP.</p>
+<h3 id="oscp-labs--exam">OSCP Labs &amp; Exam</h3>
+<p>This part isn&rsquo;t going to be very long or detailed. Most of the lab machines were relatively straight-forward.</p>
+<p>I started my 30-day lab access in October 2019 and went all out. I was moving through the labs pretty quickly <em>(bar a few extremely tricky and unrealistic boxes)</em>, rooting an average of about 3-4 boxes daily.</p>
+<p>I didn&rsquo;t really take a break over this period, as I found it pretty fun, and finished the entire public lab and the 3 private subnets within 3 weeks.</p>
+<p>I scheduled my exams shortly after that, got full marks within 8 hours and the rest is history. An interesting thing to note was that I probably felt more pressure preparing the exam documentation than I did for the exam.</p>
+<blockquote>
+<p><em>I understand that this section may come off as some form of humble brag, but I assure you that this is not my intention. In fact, it is to serve as a testament to how building out your skills on HTB before attempting your OSCP can be greatly beneficial.</em></p>
+</blockquote>
+<p>To wrap up this section, here are a couple of general exam advice:</p>
+<ul>
+<li>
+<p>Buffer Overflow is essentially free 25 points. Don&rsquo;t mess this one up and be sure you understand it. Again, having a solid process should get you through this easily.</p>
+</li>
+<li>
+<p>If a potential exploit seems too complicated for the exam, it probably is. Don&rsquo;t fall into rabbit holes. The exam was made to test your enumeration skills and methodology, not to develop your own 0-days.</p>
+</li>
+</ul>
+<h2 id="my-humble-advice">My Humble Advice</h2>
+<p>It is common knowledge that HTB machines are much harder and complex when compared to the OSCP labs. I believe that my exposure to those brutal HTB machines definitely prepared <em>(possibly even over-prepared)</em> me.</p>
+<p>A good gauge to know when you&rsquo;re ready for the OSCP is when you can comfortably root Easy machines. The general difficulty of HTB machines, when compared to OSCP machines, would be the <strong>Easy</strong> machines and MAYBE some of the <strong>Medium</strong> ones.</p>
+<p>Besides HTB, I didn&rsquo;t really do anything else and as mentioned, there are a ton of other great posts out there to guide you if you&rsquo;re really lost.</p>
+<p>As this post was meant to cover my approach, I will go through the benefits of learning on HTB, that I felt made OSCP a breeze.</p>
+<h3 id="refining-methodology">Refining Methodology</h3>
+<p>Active HTB machines force you to do your own research and understand the vulnerabilities in order to piece them together. Most machines typically don&rsquo;t have a one-shot exploit that you can get from <a href="https://exploit-db.com">exploit.db</a> and even if there is, you probably need to make certain modifications to it.</p>
+<p>This is also the main reason that I&rsquo;m reluctant to suggest doing retired boxes alongside walkthroughs, because it will be much harder for you to properly define your own <strong>methodology</strong>.</p>
+<blockquote>
+<p><em>Note: Retired boxes are not the problem here. You can still do retired boxes, just don&rsquo;t use a walkthrough A-Z to get root. Try to Google and figure out the problems you face instead of referring to a walkthrough right away.</em></p>
+</blockquote>
+<p>Going through the painful process of enumeration, completely blind on a box, is what really helped me establish my methodology. There were many times I went through articles, thinking it was the vulnerability I was looking for, only to find out it was a rabbit hole. However, this definitely helped me refine my methods</p>
+<p>One of the common bad habits from students preparing for their OSCP, is that they attempt all kinds of scripts from exploit-db out of sheer desperation, even when it didn&rsquo;t really make sense.</p>
+<p>One of the tips I wished someone shared with me, is that some vulnerabilities typically require a pre-existing condition in order to be exploitable. Verifying such conditions exist will definitely help eliminate these possibilities and stop you from going down rabbit holes.</p>
+<p>This typically requires you to also understand the vulnerability on a deeper level, which in turn would help you grow as a security professional.</p>
+<p>In my opinion, having proper enumeration methodology is not only the most important skill for the OSCP exams, but also one of the most valuable traits you can have in your Infosec career.</p>
+<h3 id="high-exposure-to-technology-stacks">High Exposure to Technology Stacks</h3>
+<p>HTB offers you a ton of boxes that are relatively modern in terms of tech. Boxes often have a certain theme to them that relates to the vulnerabilities on the machine.</p>
+<p>Understanding and exposure to different technology stacks are part of what makes a great security professional. As there is no hand-holding in HTB, you&rsquo;re typically required to read through the documentations of these tech stacks before you identify the attack vector.</p>
+<blockquote>
+<p><strong>Learning how to read documentation efficiently is an incredibly important skill</strong>.</p>
+</blockquote>
+<p>As security professionals, we typically don&rsquo;t have the luxury of going through documentations from start to finish on short engagements. However, by quickly grasping the purpose of the technology, you could potentially identify a number of attack vectors that can help you zoom in on the relevant documentation.</p>
+<p>Think of this exposure to different tech stacks, as something that can also help in refining your methodology.</p>
+<h3 id="getting-help-and-making-friends">Getting Help and Making Friends</h3>
+<p>If you started off like me and have no friends currently working in Infosec, start by making friends on the HTB Discord.</p>
+<p>I found that the majority of the HTB community is pretty friendly. I would often get stuck on something I knew nothing about and I could always rely on someone to explain things to me. One of the best box creators on HTB even took the time to explain a unique vulnerability he implemented which I was struggling to grasp.</p>
+<p>As always, be courteous, ask nicely and make some new friends along the way. There will always be elitists who belittle you but don&rsquo;t let that discourage you. Just treat them as one of the many obstacles along your OSCP journey.</p>
+<blockquote>
+<p><em>One of the biggest pet peeves of the HTB community (and rightfully so), are people who ask questions without describing what they&rsquo;ve attempted. This is mainly because there are people who tend to ask for help without really trying beforehand.</em></p>
+<p><em>If you&rsquo;re going to ask someone for help, please explain what you&rsquo;ve tried as well so people will know how to help you without spoiling it.</em></p>
+</blockquote>
+<p><strong>Lastly, I would also like to help you if you require guidance.</strong></p>
+<p>I would not be here today if not for the strong community that Infosec has, and I would like to offer some help to aspiring professionals.</p>
+<p>If you ever find yourself caught between a rock and a hard place, feel free to reach me via email or any of the social media channels I&rsquo;ve listed on my home page.</p>
+<h2 id="wrap-up">Wrap Up</h2>
+<p>I hope this post was able to offer a different insight into how I began my initial transition from sales, into a technical role. The OSCP was just the beginning and since then, I&rsquo;ve also acquired my OSWE and am about to sit for my Red Team Operator exam by Zero-Point Security.</p>
+<p>If you have a question you&rsquo;d like answered, feel free to drop me a tweet <em>(I don&rsquo;t tweet much but am active)</em> or an email.</p>
+<p>My next post will be on my preparation for OSWE and it&rsquo;ll probably be a little more in line with your average exam write up. I left a powerful quote at the end of this post that has always inspired and motivated me to push myself. Hopefully, it will be able to do the same for you too. Thanks for reading and <strong>TRY HARDER</strong>!</p>
+<blockquote>
+<p>&ldquo;It is not the critic who counts; not the man who points out how the strong man stumbles, or where the doer of deeds could have done them better.</p>
+<p>The credit belongs to the man who is actually in the arena, whose face is marred by dust and sweat and blood; who strives valiantly; who errs, who comes short again and again, because there is no effort without error and shortcoming; but who does actually strive to do the deeds; who knows great enthusiasms, the great devotions; who spends himself in a worthy cause; who at the best knows in the end the triumph of high achievement, and who at the worst, if he fails, at least fails while daring greatly, so that his place shall never be with those cold and timid souls who neither know victory nor defeat.&rdquo;</p>
+</blockquote>
+]]></content>
+        </item>
+        
+    </channel>
+</rss>

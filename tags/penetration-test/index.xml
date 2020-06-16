@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>wayneJLee</title>
-    <link>waynejlee.com/</link>
-    <description>Recent content on wayneJLee</description>
+    <title>Penetration Test on wayneJLee</title>
+    <link>waynejlee.com/tags/penetration-test/</link>
+    <description>Recent content in Penetration Test on wayneJLee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Tue, 16 Jun 2020 02:43:16 +0800</lastBuildDate>
     
-	<atom:link href="waynejlee.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="waynejlee.com/tags/penetration-test/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -21,16 +21,6 @@
       <description>Hello World! This post was written for those who are starting out and feeling overwhelmed by the breadth and depth of Infosec.
 To make it as relatable as possible, I decided to make this a series of posts in which I go through the phases &amp;amp; challenges I faced through:
  OSCP OSWE Red Team Ops by Zero-Point Security  It&amp;rsquo;s unlikely that a majority of you readers come from the same background as I have, therefore this post won&amp;rsquo;t be a preparation guide per se.</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>waynejlee.com/about/</link>
-      <pubDate>Mon, 15 Jun 2020 19:54:23 +0800</pubDate>
-      
-      <guid>waynejlee.com/about/</guid>
-      <description>Wayne Lee Technology Specialist @ Vigilant Asia Quick background:
- Dropped out of college to pursue Esports @ 19 Started my infosec journey in BD/Sales @ 27 Learned some Python around to automate work Decided to jump on HTB around July 2019 to learn how to hax stuff OSCP - Dec 2019 OSWE - May 2020  As a college dropout, I didn&amp;rsquo;t have a formal education in Computer Science but I did tinker a lot with the computer ever since I was a kid.</description>
     </item>
     
   </channel>

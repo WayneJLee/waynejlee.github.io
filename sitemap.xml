@@ -3,24 +3,56 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://waynejlee.github.io/about/</loc>
+    <loc>waynejlee.com/tags/offsec/</loc>
+    <lastmod>2020-06-16T02:43:16+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>waynejlee.com/tags/oscp/</loc>
+    <lastmod>2020-06-16T02:43:16+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>waynejlee.com/tags/penetration-test/</loc>
+    <lastmod>2020-06-16T02:43:16+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>waynejlee.com/posts/</loc>
+    <lastmod>2020-06-16T02:43:16+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>waynejlee.com/tags/pwk/</loc>
+    <lastmod>2020-06-16T02:43:16+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>waynejlee.com/tags/</loc>
+    <lastmod>2020-06-16T02:43:16+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>waynejlee.com/</loc>
+    <lastmod>2020-06-16T02:43:16+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>waynejlee.com/posts/zero-to-oscp/</loc>
+    <lastmod>2020-06-16T02:43:16+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>waynejlee.com/about/</loc>
     <lastmod>2020-06-15T19:54:23+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://waynejlee.github.io/blog/</loc>
+    <loc>waynejlee.com/blog/</loc>
   </url>
   
   <url>
-    <loc>https://waynejlee.github.io/series/</loc>
-  </url>
-  
-  <url>
-    <loc>https://waynejlee.github.io/tags/</loc>
-  </url>
-  
-  <url>
-    <loc>https://waynejlee.github.io/</loc>
+    <loc>waynejlee.com/series/</loc>
   </url>
   
 </urlset>
