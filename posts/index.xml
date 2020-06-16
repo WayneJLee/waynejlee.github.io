@@ -81,7 +81,11 @@ To make it as relatable as possible, I decided to make this a series of posts in
 </ul>
 <h2 id="my-humble-advice">My Humble Advice</h2>
 <p>It is common knowledge that HTB machines are much harder and complex when compared to the OSCP labs. I believe that my exposure to those brutal HTB machines definitely prepared <em>(possibly even over-prepared)</em> me.</p>
-<p>A good gauge to know when you&rsquo;re ready for the OSCP is when you can comfortably root Easy machines. The general difficulty of HTB machines, when compared to OSCP machines, would be the <strong>Easy</strong> machines and MAYBE some of the <strong>Medium</strong> ones.</p>
+<p>A good gauge to know when you&rsquo;re ready for the OSCP is when you can comfortably root Easy machines. The general difficulty of HTB machines, that match the level of OSCP machines, would be the <strong>Easy</strong> machines and MAYBE some of the <strong>Medium</strong> ones.</p>
+<p><strong><a href="https://docs.google.com/spreadsheets/d/1dwSMIAPIam0PuRBkCiDI88pU3yzrqqHkDtBngUHNCw8/edit#gid=1839402159">TJNull has a great curated list of OSCP-like VMs that I highly recommend checking out.</a></strong></p>
+<blockquote>
+<p><em>Note: Most of the machines on this list are actually much harder than the labs and exams but it serves as a great benchmark to know when you&rsquo;re ready for the OSCP.</em></p>
+</blockquote>
 <p>Besides HTB, I didn&rsquo;t really do anything else and as mentioned, there are a ton of other great posts out there to guide you if you&rsquo;re really lost.</p>
 <p>As this post was meant to cover my approach, I will go through the benefits of learning on HTB, that I felt made OSCP a breeze.</p>
 <h3 id="refining-methodology">Refining Methodology</h3>
