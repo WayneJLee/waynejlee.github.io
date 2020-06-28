@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="Wayne Lee ">
+<meta name="description" content="This post will be a part of a 4-post series that documents some of the security issues present in Malaysian organizations.
+I&amp;rsquo;ve been meaning to write a post to highlight some of the common issues faced on our engagements with clients in Malaysia. This isn&amp;rsquo;t a meant to be a blame-and-shame post, but rather to help drive changes within Malaysian organizations.
+Cybersecurity is a complex topic and requires a ton of planning, investment and execution to get right." />
+<meta name="keywords" content=", Active Directory, Cybersecurity, Malaysia, State of Cybersecurity" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://waynejlee.com/posts/my-soc-p1/" />
+
+
+    <title>
+        
+            State of Cybersecurity: Malaysia 
+ Part 1 :: wayneJLee  — An Infosec Journey
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.dede02da9537a98158079c023e83573e18127834838ef08172acce888341a797.css">
+
+
+
+
+
+
+<meta itemprop="name" content="State of Cybersecurity: Malaysia 
+ Part 1">
+<meta itemprop="description" content="This post will be a part of a 4-post series that documents some of the security issues present in Malaysian organizations.
+I&rsquo;ve been meaning to write a post to highlight some of the common issues faced on our engagements with clients in Malaysia. This isn&rsquo;t a meant to be a blame-and-shame post, but rather to help drive changes within Malaysian organizations.
+Cybersecurity is a complex topic and requires a ton of planning, investment and execution to get right.">
+<meta itemprop="datePublished" content="2020-06-28T01:49:19&#43;08:00" />
+<meta itemprop="dateModified" content="2020-06-28T01:49:19&#43;08:00" />
+<meta itemprop="wordCount" content="2013">
+<meta itemprop="image" content="https://waynejlee.com"/>
+
+
+
+<meta itemprop="keywords" content="Active Directory,Cybersecurity,Malaysia,State of Cybersecurity," />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://waynejlee.com"/>
+
+<meta name="twitter:title" content="State of Cybersecurity: Malaysia 
+ Part 1"/>
+<meta name="twitter:description" content="This post will be a part of a 4-post series that documents some of the security issues present in Malaysian organizations.
+I&rsquo;ve been meaning to write a post to highlight some of the common issues faced on our engagements with clients in Malaysia. This isn&rsquo;t a meant to be a blame-and-shame post, but rather to help drive changes within Malaysian organizations.
+Cybersecurity is a complex topic and requires a ton of planning, investment and execution to get right."/>
+
+
+
+    <meta property="og:title" content="State of Cybersecurity: Malaysia 
+ Part 1" />
+<meta property="og:description" content="This post will be a part of a 4-post series that documents some of the security issues present in Malaysian organizations.
+I&rsquo;ve been meaning to write a post to highlight some of the common issues faced on our engagements with clients in Malaysia. This isn&rsquo;t a meant to be a blame-and-shame post, but rather to help drive changes within Malaysian organizations.
+Cybersecurity is a complex topic and requires a ton of planning, investment and execution to get right." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://waynejlee.com/posts/my-soc-p1/" />
+<meta property="og:image" content="https://waynejlee.com"/>
+<meta property="article:published_time" content="2020-06-28T01:49:19+08:00" />
+<meta property="article:modified_time" content="2020-06-28T01:49:19+08:00" /><meta property="og:site_name" content="wayneJLee" />
+
+
+
+
+
+
+    <meta property="article:published_time" content="2020-06-28 01:49:19 &#43;0800 &#43;08" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">root@waynejlee.com:~/posts/my-soc-p1$</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://waynejlee.com/posts">Blog</a></li><li><a href="https://waynejlee.com/about/">About</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>10 minutes
+
+            
+
+            </p>
+        </div>
+
+        <article>
+            <h1 class="post-title">
+                <a href="https://waynejlee.com/posts/my-soc-p1/">State of Cybersecurity: Malaysia
+Part 1</a>
+            </h1>
+
+            
+
+            <div class="post-content">
+                <p>This post will be a part of a 4-post series that documents some of the security issues present in Malaysian organizations.</p>
+<p>I&rsquo;ve been meaning to write a post to highlight some of the common issues faced on our engagements with clients in Malaysia. This isn&rsquo;t a meant to be a blame-and-shame post, but rather to help drive changes within Malaysian organizations.</p>
+<p>Cybersecurity is a complex topic and requires a ton of planning, investment and execution to get right. However, while most of these fixes still require a level of planning &amp; execution, they do not require acquisition of expensive enterprise security solutions and are cost-effective fixes that can help tremendously improve your organizations security posture.</p>
+<p>Our goal in Cybersecurity is to always look at minimizing the attack surface. However, in order to reduce the attack surface, we must first try to understand the types of threats we face.</p>
+<p>The first part of this series will cover <strong>Active Directory&rsquo;s</strong> common security issues and how to fix them.</p>
+<h1 id="securing-active-directory">Securing Active Directory</h1>
+<p>Microsoft&rsquo;s Active Directory plays a huge part in medium to large enterprise environments to help them manage users, computers and services. However, we tend to find that Malaysian organizations run on a rather loosely configured AD.</p>
+<p>This in turn leads to alot of opportunities that attackers can leverage to move laterally and escalate privileges with minimal effort.</p>
+<p>Active Directory misconfiguration is a far bigger issue than zero-day malware. Here&rsquo;s a tweet by John Lambert back in 2015 that is still very much applicable today.</p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Adversaries need credentials more than malware. Deny them by avoiding the sins of Windows credential administration. <a href="http://t.co/vQMasZWOwA">pic.twitter.com/vQMasZWOwA</a></p>&mdash; John Lambert (@JohnLaTwC) <a href="https://twitter.com/JohnLaTwC/status/587289888560558080?ref_src=twsrc%5Etfw">April 12, 2015</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>In this post, we&rsquo;ll take a look at some of the attacks vectors commonly found within environments (based on my own experience) and how we can address them effectively.</p>
+<blockquote>
+<p><em>I won&rsquo;t be diving deep into these attacks from a technical perspective but feel free to reach out if you have any questions via <a href="https://waynejlee.com/">these channels</a> listed on the homepage.</em></p>
+</blockquote>
+<h2 id="kerberoasting">Kerberoasting</h2>
+<p>Kerberoasting is a common technique used by attackers to gain credentials for lateral movement. This attack targets accounts that are assigned with a <strong>Service Principal Name (SPN)</strong>.</p>
+<p><a href="https://attack.mitre.org/techniques/T1208/">MITRE&rsquo;s definition</a>:</p>
+<blockquote>
+<p>Adversaries possessing a valid Kerberos ticket-granting ticket (TGT) may request one or more Kerberos ticket-granting service (TGS) service tickets for any SPN from a domain controller (DC). Portions of these tickets may be encrypted with the RC4 algorithm, meaning the Kerberos 5 TGS-REP etype 23 hash of the service account associated with the SPN is used as the private key and is thus vulnerable to offline Brute Force attacks that may expose plaintext credentials.</p>
+</blockquote>
+<p>In summary, Kerberoasting allows <strong><em>any domain-joined user</em></strong> to request for a TGS ticket that is encrypted with the SPN account&rsquo;s hash. With this ticket, an attacker can then bruteforce the ticket to retrieve the target account&rsquo;s plaintext credentials.</p>
+<p>If the target account in question also happens to be an Enterprise Admin with a weak password, an attacker will be able to compromise your entire domain in one move.</p>
+<p>Using a tool like <strong>PowerView</strong>, it&rsquo;s incredibly easy to retrieve these tickets.</p>
+<pre><code>PS C:\&gt; Invoke-Kerberoast -Identity wkstn-admin
+
+SamAccountName       : wkstn-admin
+DistinguishedName    : CN=wkstn-admin,CN=Users,DC=******,DC=domain
+ServicePrincipalName : MSSQLSvc/SVR03.******.domain:49831
+TicketByteHexStream  :
+Hash                 : $krb5tgs$23$*wkstn-admin$******.domain$MSSQLSvc/SVR03.******.domain:49831*$6C16135FE7070D9B8D0624BB5D29A9B3$47753B4640079FCF6B8DC3D2AC4137D6693BDFC0
+                       DA0DC0D6D80F03AFCEEC98835DB48A2F015DEA4D89F73903ABAAA7241E0DA3D483B6019B8DA73AC7F0BD494E3D20BBD1EBA6C7545A43B6B547F71EB0F4C56EF7CD99B1AEAF72B6080738DD3CA443B92FBF82
+                       [snip...]
+</code></pre><p>Unfortunately, there is no real fix for Kerberoasting as it is just how the Kerberos authentication mechanism works.</p>
+<p>However, MITRE suggests the following for mitigation:</p>
+<h4 id="1-enable-aes-kerberos-encryption-over-rc4">1. Enable AES Kerberos encryption over RC4</h4>
+<p>The main reason for this is that bruteforcing RC4 is signicantly quicker than AES. Here are some benchmarks from Hashcat:</p>
+<blockquote>
+<p>kH/s - Kilohashes per second (Thousands of hashes per second)<br>
+MH/s - Megahashes per second (Millions of hashes per second)</p>
+</blockquote>
+<p><strong><em>RC4</em></strong></p>
+<pre><code>Hashmode: 13100 - Kerberos 5, etype 23, TGS-REP
+
+Speed.#1.........:   337.1 MH/s (52.68ms) @ Accel:32 Loops:256 Thr:64 Vec:1
+Speed.#2.........: 91019.8 kH/s (68.88ms) @ Accel:256 Loops:64 Thr:64 Vec:1
+Speed.#*.........:   428.1 MH/s
+</code></pre><p><strong><em>AES</em></strong></p>
+<pre><code>Hashmode: 19600 - Kerberos 5, etype 17, TGS-REP (Iterations: 4095)
+
+Speed.#1.........:   927.6 kH/s (74.32ms) @ Accel:16 Loops:512 Thr:1024 Vec:1
+Speed.#2.........:   257.7 kH/s (94.48ms) @ Accel:16 Loops:1024 Thr:1024 Vec:1
+Speed.#*.........:  1185.4 kH/s
+</code></pre><p>However, while this looks helpful at first sight, enabling AES encryption does not actually stop an attacker from specifically requesting for RC4 tickets.</p>
+<p>Check out this <a href="https://ired.team/offensive-security-experiments/active-directory-kerberos-abuse/kerberoasting-requesting-rc4-encrypted-tgs-when-aes-is-enabled">post on ired.team</a> for more information</p>
+<h4 id="2-ensure-strong-password-length-25-characters-and-complexity-with-password-expiry">2. Ensure strong password length (25+ characters) and complexity, with password expiry.</h4>
+<p>Having a strong, lengthy and randomly generated password definitely helps as they make password cracking infeasible for attackers. Attackers also have limited resources and making them commit additional resource at every step of the way will severely hamper them.</p>
+<p>Avoid using passphrases (even with leetspeak-like formats) as popular password cracking tools like Hashcat and John the Ripper support rules which enables them to combine and mutate dictionaries used for bruteforcing. Stick to truly randomly generated passwords and use a password management solutions as these are service accounts after all.</p>
+<h4 id="3-limit-spn-accounts-to-minimal-privileges">3. Limit SPN accounts to minimal privileges</h4>
+<p>While setting strong passwords are a good start, an attacker can always get lucky and having an additional limiting layer is never bad.</p>
+<p>In the example earlier, I was able to compromise the entire domain once I cracked the wkstn-admin account in 2 seconds. The unfortunate thing here is that no one knew why that account had an SPN associated with it to begin with as it was only used for domain administrative tasks.</p>
+<p>If you do have SPN accounts, be sure to review them regularly and ensure rigidness when configuring the privileges required by the service account.Principal of Least Privilege is especially important in Windows and AD environments due to how NTLM &amp; Kerberos authentication works. This leads to my next point on securing your AD.</p>
+<h2 id="exposure-of-privileged-accounts">Exposure of Privileged Accounts</h2>
+<p>Throughout engagements, it was not uncommon to find a large number of Domain/Enterprise admins within an environment. On one engagement, I actually found a nested OU named Desktop Administrators in the DA group with about 20 odd members.</p>
+<p>Having day-to-day Desktop/Helpdesk Administrators inheriting Domain or Enterprise Administrative privileges is not something we should take lightly from a security perspective.</p>
+<p>I personally believe this is the one area a majority of our local organizations are weak in and is something that should be addressed sooner, rather than later.</p>
+<p>One of the key reasons we should limit the exposure of privileged accounts is due to credential dumping.</p>
+<h3 id="_credential-dumping_"><em>Credential Dumping</em></h3>
+<p><a href="https://attack.mitre.org/techniques/T1003/">MITRE&rsquo;s Definition</a></p>
+<blockquote>
+<p>Credential dumping is the process of obtaining account login and password information, normally in the form of a hash or a clear text password, from the operating system and software. Credentials can then be used to perform Lateral Movement and access restricted information.</p>
+</blockquote>
+<p>This part is pretty self-explanatory and I won&rsquo;t go into too much detail. The most popular tool used for Credential Dumping is <strong>Mimikatz</strong> and while it&rsquo;s out-of-the-box release is detected by anti-viruses, it mainly serves as a deterrent to script kiddies. AV evasion is a trivial matter to experienced hackers and we should not be relying on our endpoint protection solutions as our only line of defence.</p>
+<p>In modern Windows OS, it is rare to be able to retrieve plaintext passwords these days through Credential Dumping. However, an attacker can still obtain a user&rsquo;s hash and use it for lateral movement, without even cracking it.</p>
+<p>Besides hashes, an attacker is also able to steal Kerberos (TGT) tickets of a user to request for valid TGS tickets to a particular resource.</p>
+<p>With the user&rsquo;s hash, an attacker can perform the following techniques for lateral movement:</p>
+<ol>
+<li>
+<p><strong><a href="https://attack.mitre.org/techniques/T1075/">Pass the Hash</a></strong></p>
+<blockquote>
+<p>Pass the hash (PtH) is a method of authenticating as a user without having access to the user&rsquo;s cleartext password. This method bypasses standard authentication steps that require a cleartext password, moving directly into the portion of the authentication that uses the password hash.</p>
+</blockquote>
+</li>
+<li>
+<p><strong><a href="https://attack.mitre.org/techniques/T1097/">Pass the ticket</a></strong></p>
+<blockquote>
+<p>Pass the ticket (PtT) is a method of authenticating to a system using Kerberos tickets without having access to an account&rsquo;s password. Kerberos authentication can be used as the first step to lateral movement to a remote system.</p>
+</blockquote>
+</li>
+</ol>
+<p>Now let&rsquo;s start considering the implications of having our Helpdesk or Desktop administrators <strong>inherit Domain/Enterprise Admin</strong> privileges. Picture this, a Helpdesk admin is responding to a ticket and he&rsquo;s required to tend to a workstation. As soon as he enters his credentials to log on that workstation, it&rsquo;s going to get cached in the operating system.</p>
+<p>This means that, if the workstation was already compromised, the attacker now has the capability to perform a Credential Dump to retrieve his hash/ticket and perform the techniques mentioned above.</p>
+<p>From an operational security perspective, this is far from ideal and we are dramatically increasing the exposure of our privileged accounts. Especially so when Helpdesk administrators often log in to many different computers on a day-to-day basis.</p>
+<blockquote>
+<p><em>Please note that these examples are from my own personal experience in engagements. I realize not all companies are set up like this but it&rsquo;s still important to review your Domain and Enterprise Admins on a regular basis.</em></p>
+</blockquote>
+<p>Let&rsquo;s take a look at some of mitigations listed by MITRE:</p>
+<h4 id="1-credential-access-protection">1. Credential Access Protection</h4>
+<p>Windows 10 comes with Windows Defender Credential Guard which helps protect credentials. This is not configured by default and has hardware requirements due to the fact that it utilizes Hyper-V virtualization to isolate the LSASS process from credential dumping attacks.</p>
+<p>This is generally a must-have on privileged workstations and mitigates a significant number of attacks that mimikatz can perform.</p>
+<h4 id="2-password-policies">2. Password Policies</h4>
+<p>Ensure that local administrator accounts have complex, unique passwords across all systems on the network. A good way to enforce this is to adopt a solution like the Microsoft Local Administrator Password Solution, which is completely <strong>free</strong>. LAPS manages and rotates passwords for local Administrator accounts within your Active Directory. There is minimal overhead for implementation and it is well documented on MSDN.</p>
+<p>With LAPS, eligible users can read or request these randomly generated passwords when needed, and not worry about password expiration or reset as that is all handled by LAPS.</p>
+<h4 id="3-privileged-account-management">3. Privileged Account Management</h4>
+<p>Ultimately, one of the strongest measures we can take is going to be privileged account management again. A <strong>significant</strong> majority of the time, Helpdesk/Desktop admins do not require Domain or Enterprise privileges to perform their day-to-day operations.</p>
+<p>Hence, by limiting the privileges of your Helpdesk/Desktop adminitrative privileges, you reduce the attack surface significantly and will be able to limit the impact of a compromise.</p>
+<h4 id="4-disabling-or-restricting-ntlm-authentication">4. Disabling or Restricting NTLM authentication</h4>
+<p>While this might sound like a good idea, be sure to audit your environment to see if any services in your environment still require NTLM authentication. In newer environments, this should generally be fine.</p>
+<blockquote>
+<p><em>However, take note that it does not completely solve the problem. Windows is moving away from NTLM in favor of Kerberos, but Kerberos is still susceptible to credential attacks like Overpass-the-Hash.<br>
+<br>
+In an OptH attack, a user’s NTLM hash can be used to request a Kerberos Ticket Granting Ticket (TGT).</em></p>
+</blockquote>
+<h1 id="key-takeaways">Key Takeaways</h1>
+<p>As we all know, there is rarely any one size fit all solution to security issues. Ensuring that multiple layers of mitigation is applied is a good strategy in reducing our attack surface.</p>
+<p>My personal advice to organizations looking to harden their AD environment is to start with the following:</p>
+<ul>
+<li>
+<p><strong>Review all privileged accounts and limit where possible</strong><br>
+<br>
+<em>The lack of proper Privileged Account Management is a far bigger issue than preventing zero-days. The general rule of thumb is to have no more than 5 Domain and Enterprise Admins per Domain or Forest respectively.</em></p>
+</li>
+<li>
+<p><strong>Consider using a privileged workstation for any Domain-level administrative activity to limit the footprints of privileged accounts</strong><br>
+<br>
+<em>These workstations should also be monitored and hardened with policies like strict host-based firewall rules, PowerShell logging, and AppLocker.</em></p>
+</li>
+<li>
+<p><strong>Identify accounts with an associated SPN to prevent Kerberoasting</strong><br>
+<br>
+<em>Review if these accounts still require an SPN and ensure they have the appropriate privileges. Consider resetting their password to something secure. General rule of thumb is to keep it 25 characters or more.</em></p>
+</li>
+</ul>
+<p>In the next part of this series, I&rsquo;ll be covering PowerShell and why it&rsquo;s far from dead in Malaysian organizations.</p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://waynejlee.com/tags/active-directory">Active Directory</a></span><span class="tag"><a href="https://waynejlee.com/tags/cybersecurity">Cybersecurity</a></span><span class="tag"><a href="https://waynejlee.com/tags/malaysia">Malaysia</a></span><span class="tag"><a href="https://waynejlee.com/tags/state-of-cybersecurity">State of Cybersecurity</a></span>
+                </p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>2013 Words</p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2020-06-28 01:49 &#43;0800</p>
+        </div>
+
+        
+            <div class="pagination">
+                <div class="pagination__title">
+                    <span class="pagination__title-h">Read other posts</span>
+                    <hr />
+                </div>
+
+                <div class="pagination__buttons">
+                    
+
+                    
+                        <span class="button next">
+                            <a href="https://waynejlee.com/posts/zero-to-oscp/">
+                                <span class="button__text">Zero to OSCP</span>
+                                <span class="button__icon">→</span>
+                            </a>
+                        </span>
+                    
+                </div>
+            </div>
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+                <span><a href="https://waynejlee.com">Wayne Lee</a></span>
+            
+            
+                <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            <span> <a href="https://waynejlee.com/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
+            <span>Made by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+        </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.dc716e9092c9820b77f96da294d0120aeeb189b5bcea9752309ebea27fd53bbe6b13cffb2aca8ecf32525647ceb7001f76091de4199ac5a3caa432c070247f5b.js" integrity="sha512-3HFukJLJggt3&#43;W2ilNASCu6xibW86pdSMJ6&#43;on/VO75rE8/7KsqOzzJSVkfOtwAfdgkd5BmaxaPKpDLAcCR/Ww=="></script>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-169793328-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+
+
+    </body>
+</html>

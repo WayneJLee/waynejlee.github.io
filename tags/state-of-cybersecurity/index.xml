@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>State of Cybersecurity on wayneJLee</title>
+    <link>https://waynejlee.com/tags/state-of-cybersecurity/</link>
+    <description>Recent content in State of Cybersecurity on wayneJLee</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Sun, 28 Jun 2020 01:49:19 +0800</lastBuildDate>
+    
+	<atom:link href="https://waynejlee.com/tags/state-of-cybersecurity/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>State of Cybersecurity: Malaysia 
+ Part 1</title>
+      <link>https://waynejlee.com/posts/my-soc-p1/</link>
+      <pubDate>Sun, 28 Jun 2020 01:49:19 +0800</pubDate>
+      
+      <guid>https://waynejlee.com/posts/my-soc-p1/</guid>
+      <description>This post will be a part of a 4-post series that documents some of the security issues present in Malaysian organizations.
+I&amp;rsquo;ve been meaning to write a post to highlight some of the common issues faced on our engagements with clients in Malaysia. This isn&amp;rsquo;t a meant to be a blame-and-shame post, but rather to help drive changes within Malaysian organizations.
+Cybersecurity is a complex topic and requires a ton of planning, investment and execution to get right.</description>
+    </item>
+    
+  </channel>
+</rss>
