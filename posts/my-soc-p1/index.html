@@ -42,7 +42,7 @@ I&rsquo;ve been meaning to write a post to highlight some of the common issues f
 Cybersecurity is a complex topic and requires a ton of planning, investment and execution to get right.">
 <meta itemprop="datePublished" content="2020-06-28T01:49:19&#43;08:00" />
 <meta itemprop="dateModified" content="2020-06-28T01:49:19&#43;08:00" />
-<meta itemprop="wordCount" content="2013">
+<meta itemprop="wordCount" content="2035">
 <meta itemprop="image" content="https://waynejlee.com"/>
 
 
@@ -206,7 +206,7 @@ Speed.#*.........:   428.1 MH/s
 Speed.#1.........:   927.6 kH/s (74.32ms) @ Accel:16 Loops:512 Thr:1024 Vec:1
 Speed.#2.........:   257.7 kH/s (94.48ms) @ Accel:16 Loops:1024 Thr:1024 Vec:1
 Speed.#*.........:  1185.4 kH/s
-</code></pre><p>However, while this looks helpful at first sight, enabling AES encryption does not actually stop an attacker from specifically requesting for RC4 tickets.</p>
+</code></pre><p>However, while this looks helpful at first sight, an attacker can still specifically request for RC4 tickets. The only way to prevent this is to completely disable RC4 in the environment, which could potentially break alot things that still rely on RC4.</p>
 <p>Check out this <a href="https://ired.team/offensive-security-experiments/active-directory-kerberos-abuse/kerberoasting-requesting-rc4-encrypted-tgs-when-aes-is-enabled">post on ired.team</a> for more information</p>
 <h4 id="2-ensure-strong-password-length-25-characters-and-complexity-with-password-expiry">2. Ensure strong password length (25+ characters) and complexity, with password expiry.</h4>
 <p>Having a strong, lengthy and randomly generated password definitely helps as they make password cracking infeasible for attackers. Attackers also have limited resources and making them commit additional resource at every step of the way will severely hamper them.</p>
@@ -286,7 +286,7 @@ In an OptH attack, a user’s NTLM hash can be used to request a Kerberos Ticket
 <em>Review if these accounts still require an SPN and ensure they have the appropriate privileges. Consider resetting their password to something secure. General rule of thumb is to keep it 25 characters or more.</em></p>
 </li>
 </ul>
-<p>In the next part of this series, I&rsquo;ll be covering PowerShell and why it&rsquo;s far from dead in Malaysian organizations.</p>
+<p>In the next part of this series, I&rsquo;ll be covering offensive PowerShell and why I believe it&rsquo;s far from dead in Malaysian organizations.</p>
 
             </div>
         </article>
@@ -298,7 +298,7 @@ In an OptH attack, a user’s NTLM hash can be used to request a Kerberos Ticket
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://waynejlee.com/tags/active-directory">Active Directory</a></span><span class="tag"><a href="https://waynejlee.com/tags/cybersecurity">Cybersecurity</a></span><span class="tag"><a href="https://waynejlee.com/tags/malaysia">Malaysia</a></span><span class="tag"><a href="https://waynejlee.com/tags/state-of-cybersecurity">State of Cybersecurity</a></span>
                 </p>
 
-            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>2013 Words</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>2035 Words</p>
 
             <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2020-06-28 01:49 &#43;0800</p>
         </div>

@@ -73,7 +73,7 @@ Speed.#*.........:   428.1 MH/s
 Speed.#1.........:   927.6 kH/s (74.32ms) @ Accel:16 Loops:512 Thr:1024 Vec:1
 Speed.#2.........:   257.7 kH/s (94.48ms) @ Accel:16 Loops:1024 Thr:1024 Vec:1
 Speed.#*.........:  1185.4 kH/s
-</code></pre><p>However, while this looks helpful at first sight, enabling AES encryption does not actually stop an attacker from specifically requesting for RC4 tickets.</p>
+</code></pre><p>However, while this looks helpful at first sight, an attacker can still specifically request for RC4 tickets. The only way to prevent this is to completely disable RC4 in the environment, which could potentially break alot things that still rely on RC4.</p>
 <p>Check out this <a href="https://ired.team/offensive-security-experiments/active-directory-kerberos-abuse/kerberoasting-requesting-rc4-encrypted-tgs-when-aes-is-enabled">post on ired.team</a> for more information</p>
 <h4 id="2-ensure-strong-password-length-25-characters-and-complexity-with-password-expiry">2. Ensure strong password length (25+ characters) and complexity, with password expiry.</h4>
 <p>Having a strong, lengthy and randomly generated password definitely helps as they make password cracking infeasible for attackers. Attackers also have limited resources and making them commit additional resource at every step of the way will severely hamper them.</p>
@@ -153,7 +153,7 @@ In an OptH attack, a user’s NTLM hash can be used to request a Kerberos Ticket
 <em>Review if these accounts still require an SPN and ensure they have the appropriate privileges. Consider resetting their password to something secure. General rule of thumb is to keep it 25 characters or more.</em></p>
 </li>
 </ul>
-<p>In the next part of this series, I&rsquo;ll be covering PowerShell and why it&rsquo;s far from dead in Malaysian organizations.</p>
+<p>In the next part of this series, I&rsquo;ll be covering offensive PowerShell and why I believe it&rsquo;s far from dead in Malaysian organizations.</p>
 ]]></content>
         </item>
         
